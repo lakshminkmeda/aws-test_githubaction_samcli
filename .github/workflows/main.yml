@@ -7,7 +7,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: lakshminkmeda/samcli-githubaction@main
+    - uses: lakshminkmeda/samcli-githubaction@master
       with: 
         sam_command: "build"
       env:
@@ -15,7 +15,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
     - name: sam deploy
-    - uses: lakshminkmeda/samcli-githubaction@main
+    - uses: lakshminkmeda/samcli-githubaction@masterßß
       with:
         sam_command: "deploy"
       env:
