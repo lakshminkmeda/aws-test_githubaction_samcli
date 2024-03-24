@@ -5,5 +5,5 @@ Description:
   Test to check the Github deployment of SAMCLI
 
 Resources:
-  S3Bucket:
+  JustanS3Bucket:
     Type: AWS::S3::Bucket
